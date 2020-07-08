@@ -30,7 +30,7 @@ const ChannelData: React.FC = () => {
                     date="25/05/2020"
                     content={
                         <>
-                            <Mention>@Victor Farias</Mention>, bem vindo!
+                            <Mention>@Victor Farias</Mention>, welcome!
                         </>
                     }
                     hasMention

@@ -8,7 +8,7 @@ This project aims to improve my knowledge about current frontend technologies by
 
 ## Screenshots
 
-![Main Window](https://github.com/victorffarias/discord-clone/blob/master/screenshots/discord_clone.png?raw=true)
+![Main Window](screenshots/discord_clone.png)
 
 ## Tech/framework used
 <b>Built with</b>

@@ -1,6 +1,8 @@
 ## Discord Clone
 This project aims to improve my knowledge about current frontend technologies by copying the standard layout of the Discord Web application
 
+[View on Netlify](netlify-url)
+
 [![Build Status][travis-image]][travis-url]
 [![js-standard-style][style-image]](style-url)
 
@@ -57,3 +59,4 @@ MIT © [Victor Farias](https://github.com/victorffarias/)
 [travis-url]: https://travis-ci.org/victorffarias/discord-clone
 [style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [style-url]: https://github.com/feross/standard
+[netlify-url]: https://discord-victor-farias.netlify.app/

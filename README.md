@@ -1,7 +1,6 @@
 ## Discord Clone
 This project aims to improve my knowledge about current frontend technologies by copying the standard layout of the Discord Web application
 
-[![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![js-standard-style][style-image]](style-url)
 
@@ -54,8 +53,6 @@ By contributing, you agree that your contributions will be licensed under its MI
 MIT © [Victor Farias](https://github.com/victorffarias/)
 
 <!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
 [travis-image]: https://travis-ci.org/victorffarias/discord-clone.svg?branch=master
 [travis-url]: https://travis-ci.org/victorffarias/discord-clone
 [style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat

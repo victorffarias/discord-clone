@@ -1,10 +1,10 @@
 ## Discord Clone
 This project aims to improve my knowledge about current frontend technologies by copying the standard layout of the Discord Web application
 
-[View on Netlify](netlify-url)
+[View on Netlify][netlify-url]
 
 [![Build Status][travis-image]][travis-url]
-[![js-standard-style][style-image]](style-url)
+[![js-standard-style][style-image]][style-url]
 
 ## Screenshots
 

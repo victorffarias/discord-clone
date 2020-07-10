@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 
 import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadphoneIcon, SettingsIcon, ButtonContainer, SlashIcon} from './styles'
 
-interface IconProps {
-    Icon : React.FC
-};
-
 const OnOffIcon: React.FC = props => {
     const [state, setState] = useState("on");
 

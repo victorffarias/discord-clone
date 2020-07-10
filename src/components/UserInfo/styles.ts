@@ -55,7 +55,7 @@ export const Icons = styled.div`
     }
 `;
 
-export const Clickable = styled.button`
+export const ButtonContainer = styled.button`
     background-color: transparent;
 
     opacity: .7;

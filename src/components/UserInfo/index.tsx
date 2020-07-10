@@ -1,28 +1,25 @@
 import React, {useState} from 'react';
 
-import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadphoneIcon, SettingsIcon, Clickable, SlashIcon} from './styles'
+import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadphoneIcon, SettingsIcon, ButtonContainer, SlashIcon} from './styles'
+
+interface IconProps {
+    Icon : React.FC
+};
+
+const OnOffIcon: React.FC = props => {
+    const [state, setState] = useState("on");
+
+    const handleClick = () => setState(state === 'on' ? 'off' : 'on')
+
+    return (
+    <ButtonContainer onClick={handleClick}>
+        {state === 'off' ? <SlashIcon /> : ''}
+        {props.children}
+    </ButtonContainer>
+    );
+}
 
 const UserInfo: React.FC = () => {
-    const [mutedMic, setMutedMic] = useState<number>(0);
-    const [muteHeadset, setMutedHeadset] = useState<number>(0);
-
-    function handleMicClick(){
-        if(mutedMic === 0){
-            setMutedMic(1);
-        }else{
-            setMutedMic(0)
-        }
-    }
-
-    function handleHeadsetClick(){
-        if(muteHeadset === 0){
-            setMutedHeadset(1);
-        }else{
-            setMutedHeadset(0)
-        }
-    }
-
-
     return (
         <Container>
             <Profile>
@@ -34,14 +31,12 @@ const UserInfo: React.FC = () => {
             </Profile>
 
             <Icons>
-                <Clickable onClick={handleMicClick}>
-                    {mutedMic === 1 ? <SlashIcon /> : ''}
+                <OnOffIcon>
                     <MicIcon />
-                </Clickable>
-                <Clickable onClick={handleHeadsetClick}>
-                    {muteHeadset === 1 ? <SlashIcon /> : ''}
+                </OnOffIcon>
+                <OnOffIcon>
                     <HeadphoneIcon />
-                </Clickable>
+                </OnOffIcon>
                 <SettingsIcon />
             </Icons>
         </Container>

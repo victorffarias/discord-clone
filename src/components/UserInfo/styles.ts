@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Mic, Headset, Settings} from 'styled-icons/material';
+import { Slash } from 'styled-icons/fa-solid';
 
 export const Container = styled.div`
     grid-area: UI;
@@ -54,19 +55,43 @@ export const Icons = styled.div`
     }
 `;
 
-export const MicIcon = styled(Mic)`
-    width: 20px;
-    height: 20px;
+export const Clickable = styled.button`
+    background-color: transparent;
 
-    color: var(--white);
     opacity: .7;
     cursor: pointer;
+    position: relative;
 
     transition: opacity .2s;
 
     &:hover {
         opacity: 1;
     }
+
+    > div {
+        position: relative;
+    }
+`
+
+export const SlashIcon = styled(Slash)`
+    width: 14px;
+    height: 20px;
+
+    color: var(--notification);
+
+    position: absolute;
+    left: 3px;
+    top: 0px;
+    z-index: 3;
+    transform: rotate(90deg);
+
+`
+
+export const MicIcon = styled(Mic)`
+    width: 20px;
+    height: 20px;
+
+    color: var(--white);
 `;
 
 export const HeadphoneIcon = styled(Headset)`
@@ -74,14 +99,6 @@ export const HeadphoneIcon = styled(Headset)`
     height: 20px;
 
     color: var(--white);
-    opacity: .7;
-    cursor: pointer;
-
-    transition: opacity .2s;
-
-    &:hover {
-        opacity: 1;
-    }
 `;
 
 export const SettingsIcon = styled(Settings)`

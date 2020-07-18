@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Modal from '../Modal';
+
 
 import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadphoneIcon, SettingsIcon, ButtonContainer, SlashIcon} from './styles'
 
@@ -35,6 +37,7 @@ const UserInfo: React.FC = () => {
                 </OnOffIcon>
                 <SettingsIcon />
             </Icons>
+            <Modal/>
         </Container>
     );
 }

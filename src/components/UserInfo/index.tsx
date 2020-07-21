@@ -35,7 +35,7 @@ const UserInfo: React.FC = () => {
                 <OnOffIcon>
                     <HeadphoneIcon />
                 </OnOffIcon>
-                <SettingsIcon />
+                <SettingsIcon/>
             </Icons>
             <Modal/>
         </Container>

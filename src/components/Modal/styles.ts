@@ -9,9 +9,16 @@ export const BackgroundShadow = styled.div`
     background: rgba(0, 0, 0, 0.6);
     z-index: 3;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.hide {
+        display: none;
+    }
+    
 `;
 
 export const Container = styled.div`
@@ -21,7 +28,8 @@ export const Container = styled.div`
 
     border-radius: 0.3rem;
 
-    background-color: var(--white);
+    background-color: var(--secondary);
+    box-shadow: rgba(0,0,0, 0.2) 0px 1px 0px 0px;
 `;
 
 export const ModalTitle = styled.div`
@@ -29,15 +37,23 @@ export const ModalTitle = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid var(--primary);
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: var(--white);
 
 
 `;
 
 export const ModalBody = styled.div`
     padding: 1rem;
+
+    font-size: 14px;
+    color: var(--senary);
 
 `;
 
@@ -59,7 +75,7 @@ export const ModalButton = styled.button`
     font-size: 1rem;
     border-radius: 0.25rem;
 
-    background-color: rgb(67, 181, 129); 
+    background-color: var(--link);
     color: rgb(255, 255, 255);
 
     cursor: pointer;
